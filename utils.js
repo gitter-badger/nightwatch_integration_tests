@@ -1,3 +1,10 @@
+module.exports.CONSTS = {
+    dummyAccount: {
+      login: 'VRTB2155',
+      password: 'letmein'
+    }
+}
+
 module.exports.randomStr = function (length, initChars) {
     var chars = initChars || 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
         str = '';
@@ -20,7 +27,7 @@ module.exports.openUrlsOld = function (browser, urls) {
             .waitForElementVisible('body', 5000)
             .pause(2000);
     });
-    
+
     browser.end();
 };
 
@@ -51,4 +58,3 @@ module.exports.smokeTestUrls = function (urls, domain) {
 
     return testSteps;
 };
-
