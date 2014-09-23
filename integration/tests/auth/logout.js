@@ -16,10 +16,10 @@ module.exports = {
         loginSuccess(browser);
 
         browser
-            .assert.visible(logoutButton)
-            .click(logoutButton)
+            .assert.visible(element.logoutButton)
+            .click(element.logoutButton)
             .pause(5000)
-            .assert.visible(loginButton)
+            .assert.visible(element.loginButton)
         .end();
     }
 };
