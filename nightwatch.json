@@ -17,6 +17,19 @@
                 "browserstack.resolution": "1280x1024"
             }
         },
+        "production-ff": {
+            "launch_url": "http://www.binary.com",
+            "selenium_port": 80,
+            "selenium_host": "hub.browserstack.com",
+            "silent": true,
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "browserstack.user": "BorisYankov",
+                "browserstack.key": "RLpblHGObo8kqtQWLjT4",
+                "browserstack.debug": true,
+                "browserstack.resolution": "1280x1024"
+            }
+        },
         "chrome": {
             "launch_url": "http://www.binary-beta.com",
             "selenium_port": 80,
@@ -30,7 +43,33 @@
                 "browserstack.resolution": "1280x1024"
             }
         },
+        "production-chrome": {
+            "launch_url": "http://www.binary-beta.com",
+            "selenium_port": 80,
+            "selenium_host": "hub.browserstack.com",
+            "silent": true,
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "browserstack.user": "BorisYankov",
+                "browserstack.key": "RLpblHGObo8kqtQWLjT4",
+                "browserstack.debug": true,
+                "browserstack.resolution": "1280x1024"
+            }
+        },
         "ie": {
+            "launch_url": "http://www.binary-beta.com",
+            "selenium_port": 80,
+            "selenium_host": "hub.browserstack.com",
+            "silent": true,
+            "desiredCapabilities": {
+                "browserName": "internet explorer",
+                "browserstack.user": "BorisYankov",
+                "browserstack.key": "RLpblHGObo8kqtQWLjT4",
+                "browserstack.debug": true,
+                "browserstack.resolution": "1280x1024"
+            }
+        },
+        "production-ie": {
             "launch_url": "http://www.binary-beta.com",
             "selenium_port": 80,
             "selenium_host": "hub.browserstack.com",
