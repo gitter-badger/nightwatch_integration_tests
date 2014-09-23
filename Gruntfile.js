@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                 }
             },
             browserstack: {
-                command: 'nightwatch -c browserstack.json',
+                command: 'nightwatch -c local-selenium.json',
                 options: {
                     stderr: false,
                     execOptions: {

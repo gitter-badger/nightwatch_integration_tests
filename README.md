@@ -10,11 +10,16 @@ These tests reside in
 
 In order to run the tests locally, you have to have [Selenium](http://www.seleniumhq.org/) server running on your machine.
 
-To run the tests via [BrowserStack](http://www.browserstack.com/start) you need to specify your API keys via the command line (not yet implemented, but shouldn't be stored in the config).
+To install and run Selenium, install via NPM:
+
+    npm install selenium-standalone -g
+
+Then run:
+
+    start-selenium
 
 
-
-Run all tests locally (on firefox):
+Run all tests via BrowserStack (on firefox):
 
     nightwatch
 
@@ -26,30 +31,22 @@ Run a group of tests:
 
     nightwatch -g auth
 
-Run tests via BrowserStack:
+Run tests locally:
 
 Firefox (default):
 
-    nightwatch -c browserstack.json
-
-Chrome:
-
-    nightwatch -c browserstack.json --env chrome
-
-Internet Explorer:
-
-    nightwatch -c browserstack.json --env ie
+    nightwatch -c local-selenium.json
 
 
 ####You can also run via Grunt like this:
 
-Locally:
+BrowserStack:
 
     grunt
 
-BrowserStack:
+Selenium:
 
-    grunt bs
+    grunt selenium
 
 
 ## Smoke Tests
