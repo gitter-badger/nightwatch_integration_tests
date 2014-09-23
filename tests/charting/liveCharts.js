@@ -1,7 +1,7 @@
 ﻿var URL = require('../../url');
 
-var element = {    
-    downloadButton: 'a.button'
+var element = {
+    chart: '.highcharts-container'
 };
 
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
         browser
             .url(browser.launch_url + URL.CHARTS.LIVE_CHARTS)
             .waitForElementVisible('body', 5000)
-            .assert.containsText(element.downloadButton, 'Download')
+            .assert.elementPresent(element.chart)
         .end();
     },
 };
