@@ -3,8 +3,7 @@
     "custom_commands_path": "../integration/commands/",
     "custom_assertions_path": "../integration/assertions/",
     "selenium": {
-        "start_process": true,
-        "server_path": "../lib/selenium-server-standalone.jar",
+        "start_process": false,
         "log_path": "tests_output",
         "host": "127.0.0.1",
         "port": 4444,
