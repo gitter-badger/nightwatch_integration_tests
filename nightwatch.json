@@ -2,47 +2,45 @@
     "src_folders": [ "tests/" ],
     "globals_path": "globals.js",
     "custom_commands_path": "commands/",
-    "custom_assertions_path" : "assertions/",
-    "selenium": {
-        "start_process": false,
-        "log_path": "tests_output",
-        "host": "127.0.0.1",
-        "port": 4444,
-        "cli_args": {
-            "webdriver.log.file" : "console.log"
-        }
-    },
+    "custom_assertions_path": "assertions/",
     "test_settings": {
         "default": {
             "launch_url": "http://www.binary-beta.com",
-            "selenium_host": "127.0.0.1",
-            "selenium_port": 4444,
+            "selenium_port": 80,
+            "selenium_host": "hub.browserstack.com",
             "silent": true,
-            "disable_colors": false,
-            "screenshots": {
-                "enabled": false,
-                "path": ""
-            },
             "desiredCapabilities": {
                 "browserName": "firefox",
-                "javascriptEnabled": true,
-                "acceptSslCerts": true
+                "browserstack.user": "BorisYankov",
+                "browserstack.key": "RLpblHGObo8kqtQWLjT4",
+                "browserstack.debug": true,
+                "browserstack.resolution": "1280x1024"
             }
         },
-        "production": {
-            "launch_url": "http://www.binary.com",
-            "selenium_host": "127.0.0.1",
-            "selenium_port": 4444,
+        "chrome": {
+            "launch_url": "http://www.binary-beta.com",
+            "selenium_port": 80,
+            "selenium_host": "hub.browserstack.com",
             "silent": true,
-            "disable_colors": false,
-            "screenshots": {
-                "enabled": false,
-                "path": ""
-            },
             "desiredCapabilities": {
-                "browserName": "firefox",
-                "javascriptEnabled": true,
-                "acceptSslCerts": true
+                "browserName": "chrome",
+                "browserstack.user": "BorisYankov",
+                "browserstack.key": "RLpblHGObo8kqtQWLjT4",
+                "browserstack.debug": true,
+                "browserstack.resolution": "1280x1024"
+            }
+        },
+        "ie": {
+            "launch_url": "http://www.binary-beta.com",
+            "selenium_port": 80,
+            "selenium_host": "hub.browserstack.com",
+            "silent": true,
+            "desiredCapabilities": {
+                "browserName": "internet explorer",
+                "browserstack.user": "BorisYankov",
+                "browserstack.key": "RLpblHGObo8kqtQWLjT4",
+                "browserstack.debug": true,
+                "browserstack.resolution": "1280x1024"
             }
         }
     }
