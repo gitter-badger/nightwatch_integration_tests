@@ -75,4 +75,4 @@ If you need to run against the production site, include the --env parameter like
     nightwatch -g tests/smoke-tests --env production
 
 
-### Read more about nightwatch commands at [Nightwatch Test Runner](http://nightwatchjs.org/guide#test-runner)
+### Read more at [Nightwatch Test Runner](http://nightwatchjs.org/guide#test-runner)

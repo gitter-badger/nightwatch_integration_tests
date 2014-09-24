@@ -1,4 +1,4 @@
-var utils = require('../../../utils');
+var utils = require('../../utils');
 var URL = require('../../url');
 
 var formId = '#openAccForm',
@@ -21,7 +21,7 @@ module.exports = {
             .url(browser.launch_url + URL.ACCOUNT.CREATE_VIRTUAL)
             .waitForElementVisible(element.form, 5000)
             .setValue(element.emailInput, randomEmail)
-            .setValue(element.countryOfResidenceInput, 'Austria')        
+            .setValue(element.countryOfResidenceInput, 'Austria')
             .setValue(element.passwordInput, 'password123')
             .click(element.openAccountButton)
             .pause(5000)
