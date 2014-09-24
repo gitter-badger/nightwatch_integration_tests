@@ -25,7 +25,7 @@ Run all tests via BrowserStack (on firefox):
 
 Run a single test:
 
-    nightwatch -t tests/auth/loginFail
+    nightwatch -t auth/loginFail
 
 Run a group of tests:
 
@@ -59,7 +59,7 @@ To run smoke tests locally:
 
 Which is equivalent to:
 
-    nightwatch -g tests/smoke-tests
+    nightwatch -g smoke-tests
 
 Smoke tests for Binary.com consist of loading a comprehensive list of URLs covering a big surface of the application's functionality, and checking if they load or throw an error (server or client side).
 
@@ -69,7 +69,7 @@ All tests run against the staging server, by default.
 
 If you need to run against the production site, include the --env parameter like this:
 
-    nightwatch -g tests/smoke-tests --env production
+    nightwatch -g smoke-tests --env production
 
 
 ### Read more at [Nightwatch Test Runner](http://nightwatchjs.org/guide#test-runner)

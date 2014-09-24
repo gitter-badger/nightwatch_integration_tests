@@ -44,10 +44,9 @@ module.exports = function (grunt) {
     });
 
     grunt.loadNpmTasks('grunt-shell');
-    grunt.loadNpmTasks('nightwatch');
 
     grunt.registerTask('default', ['shell:nightwatch']);
     grunt.registerTask('bs', ['shell:browserstack']);
-    grunt.registerTask('smoke', ['shell:smoke-tests']);
+    grunt.registerTask('smoke', ['shell:smoke']);
     grunt.registerTask('continuous', ['shell:continuous']);
 };
