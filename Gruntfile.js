@@ -5,40 +5,16 @@ module.exports = function (grunt) {
     grunt.initConfig({
         shell: {
             nightwatch: {
-                command: 'nightwatch',
-                options: {
-                    stderr: false,
-                    execOptions: {
-                        cwd: 'integration'
-                    }
-                }
+                command: 'nightwatch'
             },
             browserstack: {
-                command: 'nightwatch -c local-selenium.json',
-                options: {
-                    stderr: false,
-                    execOptions: {
-                        cwd: 'integration'
-                    }
-                }
+                command: 'nightwatch -c local-selenium.json'
             },
             smoke: {
-                command: 'nightwatch -g tests/smoke-tests',
-                options: {
-                    stderr: false,
-                    execOptions: {
-                        cwd: 'integration'
-                    }
-                }
+                command: 'nightwatch -g smoke-tests'
             },
             continuous: {
-                command: 'nightwatch -t test',
-                options: {
-                    stderr: false,
-                    execOptions: {
-                        cwd: 'continuous'
-                    }
-                }
+                command: 'nightwatch -t continuous/test'
             }
         }
     });
