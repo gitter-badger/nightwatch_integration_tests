@@ -15,7 +15,7 @@ var element = {
 
 module.exports = {
 
-    "palceRandomTrade2": function (browser) {
+    "pricingTable": function (browser) {
         browser
             .url(browser.launch_url + URL.RESOURCES.PRICING_TABLE)
             .click(element.calculateButton)

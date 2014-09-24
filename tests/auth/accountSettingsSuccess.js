@@ -12,9 +12,9 @@ var element = {
 module.exports = {
 
     "changeEmailFail": function (browser) {
-        
+
         createAccountVirtualSuccess(browser, true);
-        
+
         browser
             .url(browser.launch_url + URL.ACCOUNT.CHANGE_SETTINGS)
             .waitForElementVisible(element.emailAddressInput, 5000)
@@ -22,12 +22,13 @@ module.exports = {
             .setValue(element.emailAddressInput, 'vaild@email.com')
             .click(element.updateButton)
             .pause(5000)
-            .assert.textNotPresent('body', 'enter your email address')
+            // .assert.textNotPresent('body', 'enter your email address')
+            // to be replaced with assert.not.containsText when 0.6 ships
         .end();
     },
 
     "changeIPAddress": function (browser) {
-        
+
         createAccountVirtualSuccess(browser, true);
 
         browser
@@ -38,7 +39,8 @@ module.exports = {
             .setValue(element.ipAddressInput, '') // current IP would be better
             .click(element.updateButton)
             .pause(5000)
-            .assert.textNotPresent('body', 'enter your email address')
+            // .assert.textNotPresent('body', 'enter your email address')
+            // to be replaced with assert.not.containsText when 0.6 ships
         .end();
     }
 };

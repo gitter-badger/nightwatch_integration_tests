@@ -1,10 +1,10 @@
-﻿var URL = require('../../../url');
+﻿var URL = require('../../url');
 var utils = require('../../utils');
 
 module.exports = {
 
     "checkRandomRates": function (browser) {
-        
+
         browser
             .url(browser.launch_url + URL.TRADE.RANDOM)
             .waitForElementVisible('body', 5000)

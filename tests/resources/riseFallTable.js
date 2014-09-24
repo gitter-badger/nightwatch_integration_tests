@@ -11,11 +11,11 @@ var element = {
 
 module.exports = {
 
-    "palceRandomTrade2": function (browser) {
+    "riseFalLTable": function (browser) {
         browser
             .url(browser.launch_url + URL.RESOURCES.RISE_FALL_TABLE)
             .click(element.calculateButton)
-            .pause(5000)
+            .pause(10000)
             .assert.visible(element.pricingTable)
         .end();
     }
