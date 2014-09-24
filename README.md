@@ -6,7 +6,7 @@ We use automated integration tests to protect against stability regression.
 
 These tests reside in
 
-    /integration
+    /tests
 
 In order to run the tests locally, you have to have [Selenium](http://www.seleniumhq.org/) server running on your machine.
 
@@ -73,3 +73,6 @@ All tests run against the staging server, by default.
 If you need to run against the production site, include the --env parameter like this:
 
     nightwatch -g tests/smoke-tests --env production
+
+
+### Read more about nightwatch commands at [Nightwatch Test Runner](http://nightwatchjs.org/guide#test-runner)
