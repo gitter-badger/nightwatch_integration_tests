@@ -1,4 +1,4 @@
-## Nightwatch and Selenium
+## Nightwatch and Selenium test suite for Binary.com
 
 We use automated integration tests to protect against stability regression.
 
