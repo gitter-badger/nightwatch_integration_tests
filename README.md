@@ -31,23 +31,6 @@ Run a group of tests:
 
     nightwatch -g auth
 
-Run tests locally:
-
-Firefox (default):
-
-    nightwatch -c local-selenium.json
-
-
-####You can also run via Grunt like this:
-
-BrowserStack:
-
-    grunt
-
-Selenium:
-
-    grunt selenium
-
 
 ## Smoke Tests
 
@@ -63,23 +46,25 @@ Which is equivalent to:
 
 Smoke tests for Binary.com consist of loading a comprehensive list of URLs covering a big surface of the application's functionality, and checking if they load or throw an error (server or client side).
 
-## Testing Production Site
+## Testing Production or QA
 
-All tests run against the staging server, by default.
+The default configuration is: 
 
-If you need to run against the production site, include the --env parameter like this:
+ * Selenium Server: BrowserStack
+ * Browser: Firefox
+ * Url: http://binary-beta.com
 
-    nightwatch -g smoke-tests --env production
+If you want to change any of these from the command line:
 
-## Testing QA01, QA02, QA03, QA04
+    nightwatch --env <server>*<browser>*<url>
 
-You can run the tests against a QA server by:
+Testing on BrowserStack, with Firefox, QA01:
 
-    nightwatch --env qa01
+    nightwatch --env bs*ff*https://binaryqa01.com
 
 Or pick a single test like:
 
-    nightwatch -t tests/auth/loginFail --env qa01
+    nightwatch -t tests/auth/loginFail --env bs*ff*https://binaryqa01.com
 
 
 ### Read more at [Nightwatch Test Runner](http://nightwatchjs.org/guide#test-runner)
