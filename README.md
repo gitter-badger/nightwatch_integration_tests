@@ -71,5 +71,15 @@ If you need to run against the production site, include the --env parameter like
 
     nightwatch -g smoke-tests --env production
 
+## Testing QA01, QA02, QA03, QA04
+
+You can run the tests against a QA server by:
+
+    nightwatch --env qa01
+
+Or pick a single test like:
+
+    nightwatch -t tests/auth/loginFail --env qa01
+
 
 ### Read more at [Nightwatch Test Runner](http://nightwatchjs.org/guide#test-runner)

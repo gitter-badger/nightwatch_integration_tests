@@ -81,6 +81,58 @@
                 "browserstack.debug": true,
                 "browserstack.resolution": "1280x1024"
             }
+        },
+        "qa01": {
+            "launch_url": "http://www.binaryqa01.com",
+            "selenium_port": 80,
+            "selenium_host": "hub.browserstack.com",
+            "silent": true,
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "browserstack.user": "BorisYankov",
+                "browserstack.key": "RLpblHGObo8kqtQWLjT4",
+                "browserstack.debug": true,
+                "browserstack.resolution": "1280x1024"
+            }
+        },
+        "qa02": {
+            "launch_url": "http://www.binaryqa02.com",
+            "selenium_port": 80,
+            "selenium_host": "hub.browserstack.com",
+            "silent": true,
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "browserstack.user": "BorisYankov",
+                "browserstack.key": "RLpblHGObo8kqtQWLjT4",
+                "browserstack.debug": true,
+                "browserstack.resolution": "1280x1024"
+            }
+        },
+        "qa03": {
+            "launch_url": "http://www.binaryqa03.com",
+            "selenium_port": 80,
+            "selenium_host": "hub.browserstack.com",
+            "silent": true,
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "browserstack.user": "BorisYankov",
+                "browserstack.key": "RLpblHGObo8kqtQWLjT4",
+                "browserstack.debug": true,
+                "browserstack.resolution": "1280x1024"
+            }
+        },
+        "qa04": {
+            "launch_url": "http://www.binaryqa04.com",
+            "selenium_port": 80,
+            "selenium_host": "hub.browserstack.com",
+            "silent": true,
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "browserstack.user": "BorisYankov",
+                "browserstack.key": "RLpblHGObo8kqtQWLjT4",
+                "browserstack.debug": true,
+                "browserstack.resolution": "1280x1024"
+            }
         }
     }
 }
