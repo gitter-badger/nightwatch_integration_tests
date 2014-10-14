@@ -1,7 +1,7 @@
 {
   "name": "nightwatch_integration_tests",
   "scripts": {
-    "test": "grunt test"
+    "test": "nightwatch"
   },
   "repository": {
     "type": "git",

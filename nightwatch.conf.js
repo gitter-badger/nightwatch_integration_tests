@@ -50,5 +50,3 @@ if (process.argv.length >= 4 && process.argv[2] === '--env') {
 } else {
     module.exports.test_settings['default'] = browserStackEnv;
 };
-
-console.log(module.exports.test_settings);

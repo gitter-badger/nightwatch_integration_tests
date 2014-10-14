@@ -12,7 +12,7 @@ var element = {
         'specify your country',
         'enter the first line of your home address',
         'enter a town or city',
-        'invalid telephone number',
+        'nvalid telephone number', // "I" omitted intentionally
         'enter a password',
         'secret answer is too short',
         'must accept the terms and conditions'
