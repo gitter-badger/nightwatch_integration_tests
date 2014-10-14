@@ -12,13 +12,13 @@ var element = {
 module.exports = {
 
     "changeEmailFail": function (browser) {
-        
+
         createAccountVirtualSuccess(browser, true);
 
         browser
             .url(browser.launch_url + URL.ACCOUNT.CHANGE_SETTINGS)
             .waitForElementVisible(element.emailAddressInput, 5000)
-            .setValue(element.emailAddressInput, '')
+            .clearValue(element.emailAddressInput)
             .click(element.updateButton)
             .pause(5000)
             .assert.containsText('body', 'enter your email address')
@@ -26,7 +26,7 @@ module.exports = {
     },
 
     "changeIPAddressToInvalid": function (browser) {
-        
+
         createAccountVirtualSuccess(browser, true);
 
         browser
@@ -40,7 +40,7 @@ module.exports = {
         .end();
     },
     "changeIPAddressToInaccessible": function (browser) {
-        
+
         createAccountVirtualSuccess(browser, true);
 
         browser
