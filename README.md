@@ -1,4 +1,4 @@
-![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=master)
+[![Test Result](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=master)](https://travis-ci.org/binary-com/nightwatch_integration_tests)
 
 ## Nightwatch and Selenium test suite for Binary.com
 
