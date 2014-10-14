@@ -40,9 +40,7 @@ module.exports = {
 };
 
 
-if (process.argv.length === 4 && process.argv[2] === '--env') {
-
-    console.log(process.argv);
+if (process.argv.length >= 4 && process.argv[2] === '--env') {
 
     var config = process.argv[3].split('*'),
         env = Object.create(config[0] === 'local' ? localSeleniumEnv : browserStackEnv);

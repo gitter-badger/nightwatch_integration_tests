@@ -48,7 +48,7 @@ Smoke tests for Binary.com consist of loading a comprehensive list of URLs cover
 
 ## Testing Production or QA
 
-The default configuration is: 
+The default configuration is:
 
  * Selenium Server: BrowserStack
  * Browser: Firefox
@@ -62,9 +62,13 @@ Testing on BrowserStack, with Firefox, QA01:
 
     nightwatch --env bs*ff*https://binaryqa01.com
 
+Test locally, with chrome, on binary-beta:
+
+    nightwatch --env local*chrome*https://binary-beta.com
+
 Or pick a single test like:
 
-    nightwatch -t tests/auth/loginFail --env bs*ff*https://binaryqa01.com
+    nightwatch --env bs*ff*https://binaryqa01.com -t tests/auth/loginFail
 
 
 ### Read more at [Nightwatch Test Runner](http://nightwatchjs.org/guide#test-runner)
