@@ -4,7 +4,7 @@ var createAccountVirtualSuccess = require('./createAccountVirtualSuccess').creat
 var element = {
     form: '#changePasswordForm',
     emailAddressInput: '#Email',
-    securityTab: 'a[href=#b-security]',
+    securityTab: 'a[href="#b-security"]',
     ipAddressInput: '#ipsecurity',
     updateButton: '#submit'
 };
