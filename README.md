@@ -1,3 +1,5 @@
+![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=master)
+
 ## Nightwatch and Selenium test suite for Binary.com
 
 We use automated integration tests to protect against stability regression.
