@@ -1,4 +1,6 @@
-[![Test Result](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=master)](https://travis-ci.org/binary-com/nightwatch_integration_tests)
+| binary-beta | qa01 | qa02 | qa03 | qa04 |
+|-------------|------|------|------|------|
+| [![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=binary-beta)](https://travis-ci.org/binary-com/nightwatch_integration_tests) | [![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=binaryqa01)](https://travis-ci.org/binary-com/nightwatch_integration_tests) | [![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=binaryqa02)](https://travis-ci.org/binary-com/nightwatch_integration_tests) | [![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=binaryqa03)](https://travis-ci.org/binary-com/nightwatch_integration_tests) | [![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=binaryqa04)](https://travis-ci.org/binary-com/nightwatch_integration_tests) |
 
 ## Nightwatch and Selenium test suite for Binary.com
 

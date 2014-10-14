@@ -50,3 +50,5 @@ if (process.argv.length >= 4 && process.argv[2] === '--env') {
 } else {
     module.exports.test_settings['default'] = browserStackEnv;
 };
+
+console.log('branch:', process.env.TRAVIS_BRANCH);
