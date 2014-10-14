@@ -34,21 +34,21 @@ module.exports = {
     globals_path: 'globals.js',
     custom_commands_path: 'commands/',
     custom_assertions_path: 'assertions/',
-    test_settings: {
-        'default': browserStackEnv
-    }
+    test_settings: { }
 };
 
 
 if (process.argv.length >= 4 && process.argv[2] === '--env') {
 
     var config = process.argv[3].split('*'),
-        env = Object.create(config[0] === 'local' ? localSeleniumEnv : browserStackEnv);
+        env = config[0] === 'local' ? localSeleniumEnv : browserStackEnv;
 
     env.desiredCapabilities.browserName = config[1];
     env.launch_url = config[2];
 
     module.exports.test_settings[process.argv[3]] = env;
+} else {
+    module.exports.test_settings['default'] = browserStackEnv;
 };
 
-console.log(module.exports);
+console.log(module.exports.test_settings);

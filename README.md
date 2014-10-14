@@ -62,7 +62,7 @@ If you want to change any of these from the command line:
 
 Testing on BrowserStack, with Firefox, QA01:
 
-    nightwatch --env bs*ff*https://binaryqa01.com
+    nightwatch --env bs*firefox*https://binaryqa01.com
 
 Test locally, with chrome, on binary-beta:
 
@@ -70,7 +70,7 @@ Test locally, with chrome, on binary-beta:
 
 Or pick a single test like:
 
-    nightwatch --env bs*ff*https://binaryqa01.com -t tests/auth/loginFail
+    nightwatch --env bs*firefox*https://binaryqa01.com -t tests/auth/loginFail
 
 
 ### Read more at [Nightwatch Test Runner](http://nightwatchjs.org/guide#test-runner)
