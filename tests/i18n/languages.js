@@ -14,8 +14,9 @@ languages.forEach(function(l) {
     module.exports[l.language] = function(browser) {
         browser
             .url(browser.launch_url + '?l=' + l.code)
-            .waitForElementVisible('body', 5000)
-            .assert.containsText('body', l.translation)
+            .windowMaximize()
+            .waitForElementPresent('#menu-top', 5000)
+            .assert.containsText('#menu-top', l.translation)
         .end();
     };
 });
