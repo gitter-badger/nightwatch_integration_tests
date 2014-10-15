@@ -12,7 +12,7 @@
         });
 
         return true;
-        
+
     }, [], function (result) {
         if (typeof callback === "function") {
             callback.call(self, result);
@@ -21,4 +21,3 @@
 
     return this;
 };
-

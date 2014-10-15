@@ -11,6 +11,4 @@ var urls = fullUrlList.map(function (url, idx) {
 
 console.log('\Testing ' + urls.length + ' urls....');
 
-// for (var i = 0; i < 45; i++) urls.shift();
-
 module.exports = utils.smokeTestUrls(urls, 'https://www.binary.com');

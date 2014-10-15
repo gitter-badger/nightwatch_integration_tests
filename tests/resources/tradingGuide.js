@@ -1,10 +1,10 @@
 ﻿var URL = require('../../url');
 
 var element = {
-    riseFallSeeDemoLink: '.bet_demo_link:nth-child(1)',
-    higherLowerSeeDemoLink: '.bet_demo_link:nth-child(2)',
-    touchNoTouchSeeDemoLink: '.bet_demo_link:nth-child(3)',
-    inOutSeeDemoLink: '.bet_demo_link:nth-child(4)',
+    riseFallSeeDemoLink: '.bet_demo_link[href*="risefall"]',
+    higherLowerSeeDemoLink: '.bet_demo_link[href*="higherlower"]',
+    touchNoTouchSeeDemoLink: '.bet_demo_link[href*="touchnotouch"]',
+    inOutSeeDemoLink: '.bet_demo_link[href*="inout"]',
     demoPopup: '.inpage_popup_container',
     closeButton: '.close'
 };
