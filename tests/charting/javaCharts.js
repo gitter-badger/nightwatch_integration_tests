@@ -1,7 +1,7 @@
 ﻿var URL = require('../../url');
 
 var element = {
-    downloadButton: 'a.button'
+    downloadButton: '.button'
 };
 
 module.exports = {
