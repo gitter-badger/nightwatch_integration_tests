@@ -15,6 +15,20 @@ module.exports = function (grunt) {
             },
             continuous: {
                 command: 'nightwatch -t continuous/test'
+            },
+            push: {
+                command: 'git checkout binary-beta; \
+                git merge master; \
+                git checkout binaryqa01; \
+                git merge master; \
+                git checkout binaryqa02; \
+                git merge master; \
+                git checkout binaryqa03; \
+                git merge master; \
+                git checkout binaryqa04; \
+                git merge master; \
+                git checkout master; \
+                git push origin --all'
             }
         }
     });
@@ -25,4 +39,5 @@ module.exports = function (grunt) {
     grunt.registerTask('bs', ['shell:browserstack']);
     grunt.registerTask('smoke', ['shell:smoke']);
     grunt.registerTask('continuous', ['shell:continuous']);
+    grunt.registerTask('push', ['shell:push']);
 };
