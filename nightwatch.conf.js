@@ -49,7 +49,7 @@ if (process.argv.length >= 4 && process.argv[2] === '--env') {
     module.exports.test_settings[process.argv[3]] = env;
 } else {
     if (process.env.TRAVIS_BRANCH) {
-        browserStackEnv.launch_url = 'https://wwww.' + process.env.TRAVIS_BRANCH + '.com';
+        browserStackEnv.launch_url = 'https://www.' + process.env.TRAVIS_BRANCH + '.com';
     }
     module.exports.test_settings['default'] = browserStackEnv;
 };
