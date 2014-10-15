@@ -10,6 +10,8 @@ var formId = '#login-form',
 
 module.exports = {
 
+    disabled : true,
+
     "loginSuccess": function (browser) {
 
         browser
