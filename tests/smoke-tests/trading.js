@@ -11,4 +11,4 @@ var urls = [
     { page: 'Smart Indices', path: URL.SMART_INDICES },
 ];
 
-module.exports = utils.smokeTestUrls(urls);
+// module.exports = utils.smokeTestUrls(urls);
