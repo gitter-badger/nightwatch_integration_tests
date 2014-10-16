@@ -22,7 +22,7 @@ module.exports = {
             .setValue(element.emailAddressInput, 'vaild@email.com')
             .click(element.updateButton)
             .pause(5000)
-            // .assert.textNotPresent('body', 'enter your email address')
+            // .assert.textNotPresent('#contents', 'enter your email address')
             // to be replaced with assert.not.containsText when 0.6 ships
         .end();
     },

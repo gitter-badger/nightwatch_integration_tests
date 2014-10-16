@@ -18,13 +18,13 @@ var element = {
 module.exports = {
 
     "checkTradeInPortfolio": function (browser) {
-        
+
         placeRandomTrade(browser);
 
         browser
             .url(browser.launch_url + URL.ACCOUNT.MY_ACCOUNT)
-            .waitForElementVisible('body', 5000)
-            .assert.containsText('body', 'USD 20.00 payout if Random 25 Index')            
+            .waitForElementVisible('#content', 5000)
+            .assert.containsText('#content', 'USD 20.00 payout if Random 25 Index')            
         .end();
     }
 };

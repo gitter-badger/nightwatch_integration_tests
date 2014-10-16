@@ -25,7 +25,7 @@ module.exports = {
             .setValue(element.passwordInput, 'password123')
             .click(element.openAccountButton)
             .pause(5000)
-            .assert.containsText('body', 'Welcome');
+            .assert.containsText('#content', 'Welcome');
 
         if (!doNotEnd) browser.end();
     }

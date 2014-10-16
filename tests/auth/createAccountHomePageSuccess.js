@@ -22,7 +22,7 @@ module.exports = {
             .setValue(element.passwordInput, randomStr)
             .click(element.signinButton)
             .pause(5000)
-            .assert.containsText('body', 'Welcome')
+            .assert.containsText('#content', 'Welcome')
         .end();
     }
 };

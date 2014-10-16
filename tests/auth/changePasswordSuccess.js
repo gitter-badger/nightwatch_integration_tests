@@ -23,7 +23,7 @@ module.exports = {
             .setValue(element.newPasswordInput, 'password123')
             .setValue(element.verifyNewPasswordInput, 'password123')
             .click(element.changePasswordButton)
-            .assert.containsText('body', 'password has been changed')
+            .assert.containsText('#content', 'password has been changed')
         .end();
     }
 };

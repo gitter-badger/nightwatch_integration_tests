@@ -21,7 +21,7 @@ module.exports = {
             .waitForElementVisible(element.form, 5000)
             .click(element.changePasswordButton)
             .pause(5000)
-            .assert.containsText('body', 'enter a password')
+            .assert.containsText('#content', 'enter a password')
         .end();
     }
 };

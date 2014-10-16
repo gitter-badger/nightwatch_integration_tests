@@ -48,7 +48,7 @@ module.exports = {
             .click(element.agreeToTermsCheckbox)
             .click(element.openAccountButton)
             .pause(5000)
-            .assert.containsText('body', 'Welcome')
+            .assert.containsText('#content', 'Welcome')
         .end();
     }
 };

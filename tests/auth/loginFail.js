@@ -7,14 +7,14 @@ var formId = '#login-form',
     };
 
 function loginWith(browser, login, password, containsText) {
-  
+
     browser
         .url(browser.launch_url)
         .waitForElementVisible(element.form, 5000)
         .setValue(element.loginIdInput, login)
         .setValue(element.passwordInput, password)
         .click(element.loginButton)
-        .assert.containsText('body', containsText)
+        .assert.containsText('#content', containsText)
     .end();
 }
 
@@ -28,5 +28,5 @@ module.exports = {
     },
     "loginFailAccountUnavailable": function (browser) {
         loginWith(browser, 'VRTC449697', 'wrongpassword', 'account is unavailable');
-    }    
+    }
 };

@@ -21,7 +21,7 @@ module.exports = {
             .setValue(element.passwordInput, CONSTS.dummyAccount.password)
             .click(element.loginButton)
             .pause(5000)
-            .assert.containsText('body', 'Welcome')
+            .assert.containsText('#content', 'Welcome')
         .end();
     }
 };

@@ -9,7 +9,7 @@ var formId = '#virtual-acc-form',
 module.exports = {
 
     "createAccountHomePageFail": function (browser) {
-        
+
         browser
             .url(browser.launch_url)
             .waitForElementVisible(element.form, 5000)
@@ -17,7 +17,7 @@ module.exports = {
             .setValue(element.passwordInput, '1')
             .click(element.signinButton)
             .pause(5000)
-            .assert.containsText('body', 'information is incomplete or incorrect')
+            .assert.containsText('#content', 'information is incomplete or incorrect')
         .end();
     }
 };

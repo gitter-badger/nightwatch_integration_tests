@@ -21,7 +21,7 @@ module.exports = {
             .clearValue(element.emailAddressInput)
             .click(element.updateButton)
             .pause(5000)
-            .assert.containsText('body', 'enter your email address')
+            .assert.containsText('#content', 'enter your email address')
         .end();
     },
 
@@ -36,7 +36,7 @@ module.exports = {
             .setValue(element.ipAddressInput, 'Invalid IP')
             .click(element.updateButton)
             .pause(5000)
-            .assert.containsText('body', 'invalid IP address')
+            .assert.containsText('#content', 'invalid IP address')
         .end();
     },
     "changeIPAddressToInaccessible": function (browser) {
@@ -50,7 +50,7 @@ module.exports = {
             .setValue(element.ipAddressInput, '1.1.1.1')
             .click(element.updateButton)
             .pause(5000)
-            .assert.containsText('body', 'wouldn\'t let you in')
+            .assert.containsText('#content', 'wouldn\'t let you in')
         .end();
     }
 };
