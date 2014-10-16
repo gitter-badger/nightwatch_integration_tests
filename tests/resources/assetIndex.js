@@ -7,7 +7,7 @@ module.exports = {
             .url(browser.launch_url + URL.RESOURCES.ASSET_INDEX)
             .windowMaximize()
             .waitForElementVisible('body', 5000)
-            .assert.containsText('#content', 'Resources')
+            .assert.containsText('#content', 'Asset Index')
         .end();
     },
 };

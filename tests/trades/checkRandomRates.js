@@ -8,6 +8,8 @@ var element = {
 
 module.exports = {
 
+    disabled: true,
+
     "checkRandomRates": function (browser) {
         browser
             .url(browser.launch_url + URL.TRADE.RANDOM)

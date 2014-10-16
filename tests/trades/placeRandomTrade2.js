@@ -17,6 +17,8 @@ var element = {
 
 module.exports = {
 
+    disable: true,
+
     "palceRandomTrade2": function (browser) {
         browser
             .url(browser.launch_url + URL.TRADE.RANDOM)
