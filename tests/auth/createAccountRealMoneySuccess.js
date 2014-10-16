@@ -24,6 +24,8 @@ var element = {
 
 module.exports = {
 
+    disabled: true,
+
     "createAccountRealMoneySuccess": function (browser) {
 
         var randomStr = utils.randomStr(5),
