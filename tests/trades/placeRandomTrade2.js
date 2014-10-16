@@ -17,7 +17,7 @@ var element = {
 
 module.exports = {
 
-    disable: true,
+    disabled: true,
 
     "palceRandomTrade2": function (browser) {
         browser

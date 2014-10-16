@@ -49,7 +49,7 @@ module.exports = {
         STOCKS: '/c/trade.cgi?market=stocks',
         COMMODITIES: '/c/trade.cgi?market=commodities',
         SECTORS: '/c/trade.cgi?market=sectors',
-        RANDOMS: '/c/trade.cgi?market=random',
+        RANDOM: '/c/trade.cgi?market=random',
         SMART_INDICES: '/c/trade.cgi?market=smarties',
     },
 

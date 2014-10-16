@@ -1,3 +1,4 @@
+var URL = require('../../url');
 ﻿var placeRandomTrade = require('./placeRandomTrade').placeRandomTrade;
 
 var element = {
@@ -9,7 +10,9 @@ var element = {
 
 module.exports = {
 
-    "tradeDetailsView": function (browser) {
+    disabled: true,
+
+    "Trade Details View": function (browser) {
 
         placeRandomTrade(browser);
 
@@ -19,9 +22,9 @@ module.exports = {
             .click(element.viewButtons)
             .pause(2000)
             .assert.visible(element.sellPopup)
-            .click(sellAtMarketButton)
+            .click(element.sellAtMarketButton)
             .pause(10000)
-            .assert.containsText(sellPopup, 'Trade Confirmation')
+            .assert.containsText(element.sellPopup, 'Trade Confirmation')
         .end();
     }
 };

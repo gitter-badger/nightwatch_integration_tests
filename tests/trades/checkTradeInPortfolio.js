@@ -1,3 +1,4 @@
+var URL = require('../../url');
 ﻿var placeRandomTrade = require('./placeRandomTrade').placeRandomTrade;
 
 var element = {
@@ -17,6 +18,8 @@ var element = {
 
 module.exports = {
 
+    disabled: true,
+
     "checkTradeInPortfolio": function (browser) {
 
         placeRandomTrade(browser);
@@ -24,7 +27,7 @@ module.exports = {
         browser
             .url(browser.launch_url + URL.ACCOUNT.MY_ACCOUNT)
             .waitForElementVisible('#content', 5000)
-            .assert.containsText('#content', 'USD 20.00 payout if Random 25 Index')            
+            .assert.containsText('#content', 'USD 20.00 payout if Random 25 Index')
         .end();
     }
 };

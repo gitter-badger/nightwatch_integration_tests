@@ -1,4 +1,6 @@
-﻿var element = {
+var URL = require('../../url');﻿
+
+var element = {
     amountFor10: '#amount_for_10',
     unitsFor10: '#units_for_10',
     durationInput: '#duration_amount',
@@ -13,10 +15,13 @@
 
 module.exports = {
 
+    disabled: true,
+
     "placeRandomTrade": function (browser) {
+        console.log(browser.launch_url + URL.TRADE.RANDOM);
         browser
-            .url(browser.globals.url + '/c/trade.cgi?market=random')
-            .waitForElementVisible(element.amountFor10, 5000)
+            .url(browser.launch_url + URL.TRADE.RANDOM)
+            .waitForElementVisible(element.amountFor10, 10000)
             .setValue(element.durationInput, 5)
             .setValue(element.durationUnitsSelect, 'ticks')
             .setValue(element.payoutInput, 10)
