@@ -19,7 +19,7 @@ module.exports = {
         browser
             .url(browser.launch_url + URL.RESOURCES.PRICING_TABLE)
             .click(element.calculateButton)
-            .pause(5000)
+            .pause(10000)
             .assert.visible(element.pricingTable)
         .end();
     }

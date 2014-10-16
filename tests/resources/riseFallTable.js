@@ -11,7 +11,7 @@ var element = {
 
 module.exports = {
 
-    "riseFalLTable": function (browser) {
+    "riseFallTable": function (browser) {
         browser
             .url(browser.launch_url + URL.RESOURCES.RISE_FALL_TABLE)
             .click(element.calculateButton)
