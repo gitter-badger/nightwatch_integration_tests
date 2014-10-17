@@ -1,4 +1,4 @@
-| binary-beta | qa01 | qa02 | qa03 | qa04 |
+| [binary-beta](https://www.binary-beta.com) | [binaryqa01](https://www.binaryqa01.com) | [binaryqa02](https://www.binaryqa02.com) | [binaryqa03](https://www.binaryqa03.com) | [binaryqa04](https://www.binaryqa04.com) |
 |-------------|------|------|------|------|
 | [![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=binary-beta)](https://travis-ci.org/binary-com/nightwatch_integration_tests) | [![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=binaryqa01)](https://travis-ci.org/binary-com/nightwatch_integration_tests) | [![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=binaryqa02)](https://travis-ci.org/binary-com/nightwatch_integration_tests) | [![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=binaryqa03)](https://travis-ci.org/binary-com/nightwatch_integration_tests) | [![](https://travis-ci.org/binary-com/nightwatch_integration_tests.svg?branch=binaryqa04)](https://travis-ci.org/binary-com/nightwatch_integration_tests) |
 
