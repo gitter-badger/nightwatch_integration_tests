@@ -17,15 +17,15 @@ module.exports = function (grunt) {
                 command: 'nightwatch -t continuous/test'
             },
             push: {
-                command: 'git checkout binary-beta; \
+                command: 'git checkout beta; \
                 git merge master; \
-                git checkout binaryqa01; \
+                git checkout qa01; \
                 git merge master; \
-                git checkout binaryqa02; \
+                git checkout qa02; \
                 git merge master; \
-                git checkout binaryqa03; \
+                git checkout qa03; \
                 git merge master; \
-                git checkout binaryqa04; \
+                git checkout qa04; \
                 git merge master; \
                 git checkout master; \
                 git push origin --all'

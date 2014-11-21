@@ -37,6 +37,21 @@ module.exports = {
     test_settings: { }
 };
 
+function branchToUrl(branch) {
+
+    var branch = process.env.TRAVIS_BRANCH,
+        urls = {
+            'production': 'binary',
+            'beta': 'binary-beta',
+            'qa01': 'binaryqa01',
+            'qa02': 'binaryqa02',
+            'qa03': 'binaryqa03',
+            'qa04': 'binaryqa04'
+            'qa05': 'binaryqa05'
+        };
+
+    return 'https://www.' + urls[branch] || branch + '.com';
+}
 
 if (process.argv.length >= 4 && process.argv[2] === '--env') {
 
@@ -49,7 +64,7 @@ if (process.argv.length >= 4 && process.argv[2] === '--env') {
     module.exports.test_settings[process.argv[3]] = env;
 } else {
     if (process.env.TRAVIS_BRANCH) {
-        browserStackEnv.launch_url = 'https://www.' + process.env.TRAVIS_BRANCH + '.com';
+        browserStackEnv.launch_url = branchToUrl(process.env.TRAVIS_BRANCH);
     }
     module.exports.test_settings['default'] = browserStackEnv;
 };
