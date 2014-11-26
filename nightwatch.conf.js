@@ -50,7 +50,7 @@ function branchToUrl(branch) {
             'qa05': 'binaryqa05'
         };
 
-    return 'https://www.' + urls[branch] || branch + '.com';
+    return 'https://www.' + (urls[branch] || branch) + '.com';
 }
 
 if (process.argv.length >= 4 && process.argv[2] === '--env') {
