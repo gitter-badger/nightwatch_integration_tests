@@ -46,7 +46,7 @@ function branchToUrl(branch) {
             'qa01': 'binaryqa01',
             'qa02': 'binaryqa02',
             'qa03': 'binaryqa03',
-            'qa04': 'binaryqa04'
+            'qa04': 'binaryqa04',
             'qa05': 'binaryqa05'
         };
 
