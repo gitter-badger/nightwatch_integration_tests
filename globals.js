@@ -10,10 +10,14 @@ function randomStr(length, initChars) {
 module.exports = {
     'default': {
         url: 'https://www.binary-beta.com',
-        randomStr: randomStr        
+        randomStr: randomStr
     },
     'production': {
         url: 'https://www.binary.com',
         randomStr: randomStr
+    },
+    reporter : function(results, done) {
+        console.log(results);
+        done();
     }
 };
