@@ -29,10 +29,20 @@ git merge master; \
 git checkout master; \
 git push origin --all'
             }
-        }
+        },
+        junit_report: {
+            options: {
+                xmlFolder : "reports/",
+                outputFolder : "output/"
+            },
+            your_target: {
+                // Target-specific file lists and/or options go here.
+            },
+        },
     });
 
     grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-junit-report');
 
     grunt.registerTask('default', ['shell:nightwatch']);
     grunt.registerTask('bs', ['shell:browserstack']);
