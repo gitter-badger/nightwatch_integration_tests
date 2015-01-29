@@ -3,7 +3,7 @@ module.exports = {
     WHY_US: '/why-us',
     GET_STARTED: '/get-started',
     TOUR: '/tour',
-    CONTACT_US: '/c/contact.cgi',
+    CONTACT_US: '/contact',
 
     PORTFOLIO: '/d/portfolio.cgi',
     STATEMENT: '/d/statement.cgi',
