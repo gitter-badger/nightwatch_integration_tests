@@ -1,3 +1,4 @@
+var login = require('../../pages/login');
 var formId = '#login-form',
     element = {
         form: formId,
@@ -9,13 +10,14 @@ var formId = '#login-form',
 function loginWith(browser, login, password, containsText) {
 
     browser
-        .url(browser.launch_url)
-        .waitForElementVisible(element.form, 5000)
+       // .url(browser.launch_url)
+       // .waitForElementVisible(element.form, 5000)
+    	.page.login.goToLogin()
         .setValue(element.loginIdInput, login)
         .setValue(element.passwordInput, password)
         .click(element.loginButton)
-        .assert.containsText('#content', containsText)
-    .end();
+        .verify.containsText('#content', containsText)
+      .end();
 }
 
 module.exports = {
@@ -24,9 +26,11 @@ module.exports = {
         loginWith(browser, 'VRTC449697', '', 'Password not given.');
     },
     "loginFailNoLogin": function (browser) {
-        loginWith(browser, '', '', 'Login ID not given.');
+        loginWith(browser, '', '', 'Email not given.');
     },
     "loginFailAccountUnavailable": function (browser) {
         loginWith(browser, 'VRTC449697', 'wrongpassword', 'account is unavailable');
+        
     }
+    
 };

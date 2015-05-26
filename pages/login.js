@@ -6,9 +6,9 @@ module.exports = function(browser) {
 		{
 		    browser
 		      .url(browser.launch_url + URL.ACCOUNT.LOGIN);
-		      .waitForElementVisible('body', 1000);
+		      //.waitForElementVisible('body', 1000);
 
 		    return browser;
 		  };
 	}
-}
+

@@ -11,9 +11,9 @@ module.exports = {
     "loginPassword": function (browser) {
 
         browser
-            .url(browser.launch_url + URL.ACCOUNT.LOST_PASSWORD)
+          	.url(browser.launch_url + URL.ACCOUNT.LOST_PASSWORD)
             .waitForElementVisible('body', 5000)
-            .setValue(element.emailInput, 'binary-test@mailinator.com')
+        	.setValue(element.emailInput, 'binary-test@mailinator.com')
             .click(element.resetPasswordButton)
             .waitForElementVisible('body', 5000)
             .assert.containsText('#content', errorMsg)
