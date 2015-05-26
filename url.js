@@ -5,9 +5,9 @@ module.exports = {
     TOUR: '/tour',
     CONTACT_US: '/contact',
 
-    PORTFOLIO: '/d/portfolio.cgi',
-    STATEMENT: '/d/statement.cgi',
-    PASSWORD: '/d/change_password.cgi',
+    PORTFOLIO: '/user/portfolio',
+    STATEMENT: '/user/statement',
+    PASSWORD: '/user/change_password',
     SETTINGS: '/d/settings.cgi?o=settings',
     AFFILIATE: '/c/affiliate_signup.cgi',
     PAYMENT_METHODS: '/c/available_payment_methods.cgi',
@@ -55,11 +55,11 @@ module.exports = {
 
     RESOURCES: {
         INDEX: '/resources',
-        ASSET_INDEX: '/c/asset_index.cgi',
-        TRADING_TIMES: '/c/trading_times.cgi',
-        TRADING_GUIDE: '/c/contract_guide.cgi',
-        PRICING_TABLE: '/c/pricing_table.cgi',
-        RISE_FALL_TABLE: '/c/rise_fall_table.cgi'
+        ASSET_INDEX: '/resources/asset_index',
+        TRADING_TIMES: '/resources/trading_times',
+        TRADING_GUIDE: '/resources/contract_guide',
+        PRICING_TABLE: '/resources/pricing_table',
+        RISE_FALL_TABLE: '/resources/rise_fall_table'
     },
 
     CHARTS: {
