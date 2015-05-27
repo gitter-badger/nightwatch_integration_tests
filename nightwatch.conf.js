@@ -30,7 +30,8 @@ var defaultUrl = 'http://www.binary-beta.com',
     };
 
 module.exports = {
-    src_folders: [ 'tests/' ],
+    src_folders: ['tests/'],
+    page_objects_path: 'pages/',
     output_folder: 'reports/',
     globals_path: 'globals.js',
     custom_commands_path: 'commands/',
