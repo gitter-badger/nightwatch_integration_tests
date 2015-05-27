@@ -1,4 +1,4 @@
-var login = require('../../pages/login');
+
 var formId = '#login-form',
     element = {
         form: formId,
@@ -10,10 +10,9 @@ var formId = '#login-form',
 function loginWith(browser, login, password, containsText) {
 
     browser
-       // .url(browser.launch_url)
-       // .waitForElementVisible(element.form, 5000)
-    	.page.login.goToLogin()
-        .setValue(element.loginIdInput, login)
+        .url(browser.launch_url)
+        .waitForElementVisible(element.form, 5000)
+    	.setValue(element.loginIdInput, login)
         .setValue(element.passwordInput, password)
         .click(element.loginButton)
         .verify.containsText('#content', containsText)
