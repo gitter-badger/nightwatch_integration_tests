@@ -14,6 +14,21 @@ module.exports.randomStr = function (length, initChars) {
     return str;
 };
 
+function urlExists(url, callback) {
+	  var xhr = new XMLHttpRequest();
+	  xhr.onreadystatechange = function() {
+	    if (xhr.readyState === 4) {
+	      callback(xhr.status < 400);
+	    }
+	  };
+	  xhr.open('HEAD', url);
+	  xhr.send();
+	};
+
+
+	
+	
+	
 module.exports.openUrlsOld = function (browser, urls) {
 
     urls.forEach(function (url) {

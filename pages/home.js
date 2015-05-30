@@ -6,6 +6,7 @@
 	     passwordInput: formId + ' input[type=password]',
 	     createAccountButton: formId + ' input[type=submit]'
 	 };
+	 
 	  return {
 		 goToHome: function() {
 			 return browser
@@ -14,14 +15,14 @@
 			 		
 		 },
 		 
-		 setUsername: function(strUsername) {
+		 setAccEmail: function(strEmail) {
 			 return browser
 			 		.waitForElementVisible(element.emailInput, 1000)
 			 		.assert.visible(element.emailInput)
-			 		.setValue(element.emailInput, strUsername)
+			 		.setValue(element.emailInput, strEmail)
 		 },
 		 
-		 setPassword: function(strPassword) {
+		 setAccPassword: function(strPassword) {
 			 return browser
 			 		.waitForElementVisible(element.passwordInput, 1000)
 			 		.assert.visible(element.passwordInput)
@@ -34,15 +35,8 @@
 					.assert.visible(element.createAccountButton)
 					.click(element.createAccountButton)
 					.pause(5000)
-		},
-			 
-		verifyUserIsCreated: function() {
-				 	return browser
-				 		.assert.containsText('#content', 'Welcome')
-				 		
-			 }
-		 
-		 		 
+		}
+		
 	 };
  }
 	 
