@@ -5,7 +5,7 @@ module.exports = {
 	'logoutUser' : function (browser) {
 	
 			
-			loginUser(browser);
+		loginUser(browser);
 		
 		browser
 	   		.page.myaccount().clickLogout()

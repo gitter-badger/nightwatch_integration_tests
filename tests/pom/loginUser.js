@@ -8,7 +8,7 @@ module.exports = {
 	'loginUser' : function (browser) {
 		
 				
-		createAccount(browser);
+		//createAccount(browser);
 		//   var randomEmail = createAccount.email;
 		//   var password = createAccount.pwd;
 	   	   browser

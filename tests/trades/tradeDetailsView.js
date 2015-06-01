@@ -1,5 +1,5 @@
 var URL = require('../../url');
-﻿var placeRandomTrade = require('./placeRandomTrade').placeRandomTrade;
+var placeRandomTrade = require('./placeRandomTrade').placeRandomTrade;
 
 var element = {
     viewButtons: 'button.open_contract_details',

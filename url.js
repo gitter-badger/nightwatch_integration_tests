@@ -71,7 +71,7 @@ module.exports = {
 
     ACCOUNT: {
         LOGIN: '/login',
-        MY_ACCOUNT: '/d/my_account.cgi',
+        MY_ACCOUNT: '/user/my_account',
         CHANGE_SETTINGS: '/d/f_writepartics.cgi',
         CHANGE_PASSWORD: '/d/change_password.cgi',
         LOST_PASSWORD: '/d/lost_password.cgi',
