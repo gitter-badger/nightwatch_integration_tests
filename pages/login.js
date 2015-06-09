@@ -29,7 +29,7 @@ module.exports = function(browser) {
 					.waitForElementVisible(element.loginButton, 1000)
 					.assert.visible(element.loginButton)
 					.click(element.loginButton)
-					.pause(10000)
+					.pause(5000)
 		}
 		
 			 

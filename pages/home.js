@@ -3,8 +3,11 @@
 	 element = {
 	     form: formId,
 	     emailInput: formId + ' input[type=email]',
-	     passwordInput: formId + ' input[type=password]',
+	     passwordInput: '#chooseapassword',
+	     passwordInput2: '#chooseapassword_2',
 	     createAccountButton: formId + ' input[type=submit]'
+	     
+	   
 	 };
 	 
 	  return {
@@ -27,6 +30,9 @@
 			 		.waitForElementVisible(element.passwordInput, 1000)
 			 		.assert.visible(element.passwordInput)
 			 		.setValue(element.passwordInput, strPassword)
+			 		.waitForElementVisible(element.passwordInput2, 1000)
+			 		.assert.visible(element.passwordInput2)
+			 		.setValue(element.passwordInput2, strPassword)
 		 },
 			 
 		clickOpenAccount: function() {

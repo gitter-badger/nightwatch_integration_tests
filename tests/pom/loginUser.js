@@ -4,22 +4,33 @@ var CONSTS = require('../../utils').CONSTS;
 
 
 module.exports = {
+		
+		before : function(browser) {
+			console.log('Setting up...');
+					
+		},
+		
+		
+	after : function(browser) {
+			console.log('Closing down...');
+	},
+	
+	beforeEach: function(browser) {
+		 browser
+		      .pause(1000)
+		      .useCss()
+	},
 		 		 
 	'loginUser' : function (browser) {
 		
-				
-		//createAccount(browser);
-		//   var randomEmail = createAccount.email;
-		//   var password = createAccount.pwd;
 	   	   browser
 	   		.page.home().goToHome()
-	   		.page.login().setLoginEmail("bijan2007@gmail.com")
-	   		.page.login().setLoginPassword( "test1234")
+	   		.page.login().setLoginEmail("bijan@binary.com")
+	   		.page.login().setLoginPassword( "test123")
 	   		.page.login().clickLogin()
-	   		.page.myaccount().verifyMyAccount()
-	   		.end();
+	   		.page.account().verifyMyAccount()
+	   		//.end();
 	   
   }
-	
-
+  
 };
