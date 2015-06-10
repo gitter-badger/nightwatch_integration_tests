@@ -3,8 +3,8 @@
 	 element = {
 	     form: formId,
 	     emailInput: formId + ' input[type=email]',
-	     passwordInput: '#chooseapassword',
-	     passwordInput2: '#chooseapassword_2',
+	     passwordInput1: formId + ' input[id=chooseapassword]',
+	     passwordInput2: formId + ' input[id=chooseapassword_2]',
 	     createAccountButton: formId + ' input[type=submit]'
 	     
 	   
@@ -27,9 +27,10 @@
 		 
 		 setAccPassword: function(strPassword) {
 			 return browser
-			 		.waitForElementVisible(element.passwordInput, 1000)
-			 		.assert.visible(element.passwordInput)
-			 		.setValue(element.passwordInput, strPassword)
+			 		.waitForElementVisible(element.passwordInput1, 1000)
+			 		.assert.visible(element.passwordInput1)
+			 		.setValue(element.passwordInput1, strPassword)
+ 		
 			 		.waitForElementVisible(element.passwordInput2, 1000)
 			 		.assert.visible(element.passwordInput2)
 			 		.setValue(element.passwordInput2, strPassword)
