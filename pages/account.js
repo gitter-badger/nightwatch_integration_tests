@@ -99,6 +99,20 @@ module.exports = function(browser)
 				.waitForElementVisible(element.userDetails, 1000)
 				.verify.elementPresent(element.userDetails)
 				
+		},
+		
+		clickPortfolio: function() {
+			return browser
+				.waitForElementVisible(element.portfolioLink, 1000)
+				.verify.elementPresent(element.portfolioLink)
+				.click(element.portfolioLink)
+				.pause(1000)
+		},
+
+		verifyPortfolio: function() {
+			return browser
+				.waitForElementVisible('body',1000)
+				.verify.containsText('#content', 'Portfolio')
 		}
 		
 	};
