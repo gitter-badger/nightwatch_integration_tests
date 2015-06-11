@@ -15,7 +15,7 @@ module.exports = {
 		},
 		
 				 		 
-		'viewPortfolio': function (browser, doNotEnd) {
+		'viewChangePassword': function (browser, doNotEnd) {
 									
 			browser
 		   		.page.account().clickPassword()
