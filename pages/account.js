@@ -113,6 +113,7 @@ module.exports = function(browser)
 			return browser
 				.waitForElementVisible('body',1000)
 				.verify.containsText('#content', 'Portfolio')
+				.pause(1000)
 		},
 		
 		clickStatement: function() {
@@ -143,6 +144,21 @@ module.exports = function(browser)
 			return browser
 				.waitForElementVisible('body',1000)
 				.verify.containsText('#content', 'Profit Table')
+				.pause(1000)
+		},
+
+		verifyVirtualBalance: function() {
+			return browser
+				.waitForElementVisible('body',1000)
+				.verify.containsText('#content', '10,000.00')
+				.pause(1000)
+		},
+		
+		verifyProfitTableEntry: function() {
+			return browser
+				.waitForElementVisible('body',1000)
+				.verify.containsText('#content', 'There are no items during this period')
+				.pause(1000)
 		}
 		
 	};

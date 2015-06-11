@@ -13,16 +13,13 @@ module.exports = {
 		},
 		
 				 		 
-		'viewProfitTable': function (browser) {
+		'viewProfitTable': function (browser, doNotEnd) {
 									
 			browser
 		   		.page.account().clickProfitTable()
-		   		.page.account().verifyProfitTable()
-		   		
-		   		//.end();
+		   		.page.account().verifyProfitTable()		   				
 				if (!doNotEnd) browser.end();
-		   
-	  }
+		}
 		
 
 };

@@ -13,15 +13,14 @@ module.exports = {
 		},
 		
 				 		 
-		'viewPortfolio': function (browser) {
+		'viewPortfolio': function (browser, doNotEnd) {
 									
 			browser
 		   		.page.account().clickPortfolio()
 		   		.page.account().verifyPortfolio()
 		   		
 		   		//.end();
-				if (!doNotEnd) browser.end();
-		   
+				if (!doNotEnd) browser.end();		   
 	  }
 		
 

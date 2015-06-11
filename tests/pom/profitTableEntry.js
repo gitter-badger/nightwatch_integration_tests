@@ -1,12 +1,12 @@
 var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
-var viewPortfolio= require('./viewPortfolio').viewPortfolio;
+var viewProfitTable= require('./viewProfitTable').viewProfitTable;
 
 module.exports = {
 		
 		before: function(browser) {
 				console.log('Setting up...');
 				createVirtualAccount(browser, true);
-				viewPortfolio(browser, true);
+				viewProfitTable(browser, true);
 		},
 			
 			
@@ -18,8 +18,9 @@ module.exports = {
 		'virtualAccountBalance': function (browser) {
 									
 			browser
-		   		.page.account().verifyVirtualBalance()
-		  		.end();
+		   		.page.account().verifyProfitTableEntry()
+		   				   		
+		   		.end();
 		   
 	  }
 		
