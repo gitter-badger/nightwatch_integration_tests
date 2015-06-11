@@ -182,8 +182,9 @@ module.exports = function(browser)
 				.verify.containsText('body', 'Deposit')
 				.verify.containsText('body', 'virtual money credit to account')
 				.verify.containsText('body', '10,000.00')
-		}
-		
+		},
+
+	
 	};
 
 }
