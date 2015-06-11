@@ -1,3 +1,5 @@
+//New client can access Profit Table
+
 var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
 
 module.exports = {
