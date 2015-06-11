@@ -15,12 +15,12 @@ module.exports = {
 		},
 		
 				 		 
-		'virtualAccountBalance': function (browser) {
+		'viewStatement': function (browser, doNotEnd) {
 									
 			browser
 		   		.page.account().clickStatement()
 		   		.page.account().verifyStatement()
-		   		.end();
+		   		if (!doNotEnd) browser.end();
 		   
 	  }
 		
