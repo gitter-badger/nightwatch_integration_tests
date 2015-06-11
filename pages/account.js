@@ -113,6 +113,21 @@ module.exports = function(browser)
 			return browser
 				.waitForElementVisible('body',1000)
 				.verify.containsText('#content', 'Portfolio')
+		},
+		
+		clickStatement: function() {
+			return browser
+				.waitForElementVisible(element.statementLink, 1000)
+				.verify.elementPresent(element.statementLink)
+				.click(element.statementLink)
+				.pause(1000)
+		},
+
+
+		verifyStatement: function() {
+			return browser
+				.waitForElementVisible('body',1000)
+				.verify.containsText('#content', '10,000.00')
 		}
 		
 	};
