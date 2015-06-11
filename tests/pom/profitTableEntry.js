@@ -17,7 +17,7 @@ module.exports = {
 		},
 		
 				 		 
-		'virtualAccountBalance': function (browser) {
+		'profitTableEntry': function (browser) {
 									
 			browser
 		   		.page.account().verifyProfitTableEntry()
