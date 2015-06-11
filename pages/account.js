@@ -19,7 +19,9 @@ module.exports = function(browser)
         passwordLink: '#topMenuChangePassword',
         settingsLink: '#top_Settings',
         affiliateLink: '#topMenuBecomeAffiliate',
-        authenticateLink: '#topMenuAuthenticateAccount'
+        authenticateLink: '#topMenuAuthenticateAccount',
+        tradeLink: '#menu-top > li:nth-child(4) > a',
+        userDetails: '#user_details'
        
     };
 				
@@ -32,12 +34,7 @@ module.exports = function(browser)
 		 		.verify.urlContains('my_account')		 		
 		 				 	
 	 },
-	 	goToMyAccount: function() {
-	 		return browser
-		 		.url(browser.launch_url + URL.ACCOUNT.MY_ACCOUNT)
-		 		.waitForElementVisible('body', 1000)
-	 	},
-	 
+	 		 
 		clickLogout: function() {
 			return browser
 				.timeouts("implicit",5000)
@@ -67,9 +64,41 @@ module.exports = function(browser)
 		
 		clickContinueTrading: function() {
 			return browser
-				.waitForElementVisible(element.ContinueTradingButton, 1000)
-				.verify.elementPresent(element.ContinueTradingButton)
-				.click(element.ContinueTradingButton)
+				.waitForElementVisible(element.continueTradingButton, 1000)
+				.verify.elementPresent(element.continueTradingButton)
+				.click(element.continueTradingButton)
+				.pause(1000)
+		},
+		
+		clickTradeLink: function() {
+			return browser
+				.waitForElementVisible(element.tradeLink, 1000)
+				.verify.elementPresent(element.tradeLink)
+				.click(element.tradeLink)
+				.pause(1000)
+		},
+		
+		clickMyAccountLink: function() {
+			return browser
+				.waitForElementVisible(element.myAccountLink, 1000)
+				.verify.elementPresent(element.myAccountLink)
+				.click(element.myAccountLink)
+				.pause(1000)
+		},
+		
+		clickMySettings: function() {
+			return browser
+				.waitForElementVisible(element.settingsLink, 1000)
+				.verify.elementPresent(element.settingsLink)
+				.click(element.settingsLink)
+				.pause(1000)
+		},
+		
+		verifyMySettings: function() {
+			return browser
+				.waitForElementVisible(element.userDetails, 1000)
+				.verify.elementPresent(element.userDetails)
+				
 		}
 		
 	};

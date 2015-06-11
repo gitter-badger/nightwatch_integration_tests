@@ -13,11 +13,7 @@ module.exports = {
 			console.log('Closing down...');
 	},
 	
-	beforeEach: function(browser) {
-		 browser
-		      .pause(1000)
-		      .useCss()
-	},
+	
 		 		 
 	'randomTrades' : function (browser) {
 		

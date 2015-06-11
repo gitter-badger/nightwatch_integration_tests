@@ -30,7 +30,7 @@
 			 		.waitForElementVisible(element.passwordInput1, 1000)
 			 		.assert.visible(element.passwordInput1)
 			 		.setValue(element.passwordInput1, strPassword)
- 		
+			 		.pause(2000)
 			 		.waitForElementVisible(element.passwordInput2, 1000)
 			 		.assert.visible(element.passwordInput2)
 			 		.setValue(element.passwordInput2, strPassword)

@@ -14,12 +14,7 @@ module.exports = {
 		console.log('Closing down...');
 	},
 	
-	 beforeEach: function(browser) {
-		 browser
-		      .pause(1000)
-		      .useCss()
-	},
-			 		 
+	 			 		 
 	'viewBalances' : function (browser) {
 		
 		browser

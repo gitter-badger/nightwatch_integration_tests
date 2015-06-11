@@ -1,7 +1,7 @@
-var createAccount= require('./createAccount').createAccount;
-
+var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
 var CONSTS = require('../../utils').CONSTS;
-
+var username = "bijan@binary.com"
+var password = "test123"
 
 module.exports = {
 		
@@ -15,21 +15,18 @@ module.exports = {
 			console.log('Closing down...');
 	},
 	
-	beforeEach: function(browser) {
-		 browser
-		      .pause(1000)
-		      .useCss()
-	},
-		 		 
-	'loginUser' : function (browser) {
+			 		 
+	'loginUser' : function (browser, doNotEnd) {
 		
 	   	   browser
 	   		.page.home().goToHome()
-	   		.page.login().setLoginEmail("bijan@binary.com")
-	   		.page.login().setLoginPassword( "test123")
+	   		.page.login().setLoginEmail(username)
+	   		.page.login().setLoginPassword(password)
 	   		.page.login().clickLogin()
 	   		.page.account().verifyMyAccount()
 	   		//.end();
+	   		
+	   		if (!doNotEnd) browser.end();
 	   
   }
   
