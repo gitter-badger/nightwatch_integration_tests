@@ -13,11 +13,11 @@ module.exports = {
 		},
 		
 				 		 
-		'virtualAccountBalance': function (browser) {
+		'viewProfitTable': function (browser) {
 									
 			browser
-		   		.page.account().clickStatement()
-		   		.page.account().verifyStatement()
+		   		.page.account().clickProfitTable()
+		   		.page.account().verifyProfitTable()
 		   		
 		   		//.end();
 				if (!doNotEnd) browser.end();

@@ -128,6 +128,21 @@ module.exports = function(browser)
 			return browser
 				.waitForElementVisible('body',1000)
 				.verify.containsText('#content', '10,000.00')
+		},
+		
+		clickProfitTable: function() {
+			return browser
+				.waitForElementVisible(element.profitTableLink, 1000)
+				.verify.elementPresent(element.profitTableLink)
+				.click(element.profitTableLink)
+				.pause(1000)
+		},
+
+
+		verifyProfitTable: function() {
+			return browser
+				.waitForElementVisible('body',1000)
+				.verify.containsText('#content', 'Profit Table')
 		}
 		
 	};
