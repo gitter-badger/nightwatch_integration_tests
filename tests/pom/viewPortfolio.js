@@ -1,3 +1,5 @@
+//New client can open Portfolio page
+
 var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
 
 module.exports = {
