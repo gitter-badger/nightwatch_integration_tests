@@ -128,7 +128,7 @@ module.exports = function(browser)
 		verifyStatement: function() {
 			return browser
 				.waitForElementVisible('body',1000)
-				.verify.containsText('#content', '10,000.00')
+				.verify.containsText('#content', 'Statement')
 		},
 		
 		clickProfitTable: function() {
@@ -159,6 +159,29 @@ module.exports = function(browser)
 				.waitForElementVisible('body',1000)
 				.verify.containsText('#content', 'There are no items during this period')
 				.pause(1000)
+		},
+		
+		clickPassword: function() {
+			return browser
+				.waitForElementVisible(element.passwordLink, 1000)
+				.verify.elementPresent(element.passwordLink)
+				.click(element.passwordLink)
+				.pause(1000)
+		},		
+
+		verifyPassword: function() {
+			return browser
+				.waitForElementVisible('body',1000)
+				.verify.containsText('#content', 'Change Password')
+				.pause(1000)
+		},
+		
+		verifyStatementAmount: function() {
+			return browser
+				.waitForElementVisible('body',1000)
+				.verify.containsText('body', 'Deposit')
+				.verify.containsText('body', 'virtual money credit to account')
+				.verify.containsText('body', '10,000.00')
 		}
 		
 	};
