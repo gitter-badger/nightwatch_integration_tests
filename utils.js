@@ -6,7 +6,7 @@ module.exports.CONSTS = {
 }
 
 module.exports.randomStr = function (length, initChars) {
-    var chars = initChars || 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+    var chars = initChars || 'abcdefghijklmnopqrstuvwxyz123456789',
         str = '';
     for (var i = length; i > 0; --i) {
         str += chars[Math.round(Math.random() * (chars.length - 1))];

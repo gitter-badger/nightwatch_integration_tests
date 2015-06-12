@@ -1,7 +1,5 @@
 var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
-var CONSTS = require('../../utils').CONSTS;
-var username = "bijan@binary.com"
-var password = "test123"
+
 
 module.exports = {
 		
@@ -14,9 +12,11 @@ module.exports = {
 	after : function(browser) {
 			console.log('Closing down...');
 	},
-	
-			 		 
+				 		 
 	'loginUser' : function (browser, doNotEnd) {
+		var username = "bijan@binary.com";
+		var password = "test123";
+			
 		
 	   	   browser
 	   		.page.home().goToHome()
@@ -24,8 +24,7 @@ module.exports = {
 	   		.page.login().setLoginPassword(password)
 	   		.page.login().clickLogin()
 	   		.page.account().verifyMyAccount()
-	   		//.end();
-	   		
+	   			   		
 	   		if (!doNotEnd) browser.end();
 	   
   }

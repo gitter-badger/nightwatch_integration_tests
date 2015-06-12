@@ -1,6 +1,4 @@
-var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
-var loginUser = require('./loginUser').loginUser;
-var logoutUser = require('./logoutUser').logoutUser;
+var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
 
 
 module.exports = {

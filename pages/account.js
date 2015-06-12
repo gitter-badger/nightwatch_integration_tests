@@ -21,7 +21,11 @@ module.exports = function(browser)
         affiliateLink: '#topMenuBecomeAffiliate',
         authenticateLink: '#topMenuAuthenticateAccount',
         tradeLink: '#menu-top > li:nth-child(4) > a',
-        userDetails: '#user_details'
+        userDetails: '#user_details',
+        affiliateTab: '#general_info',
+        faqTab: '#faq',
+        signMeUpButton: '#general_info-content > div > div:nth-child(3) > a > span',
+        faqContent: '#faq-content > div'
        
     };
 				
@@ -30,8 +34,8 @@ module.exports = function(browser)
 		verifyMyAccount: function() {
 			
 		 	return browser
-		 		.verify.containsText('#content', 'Welcome')
-		 		.verify.urlContains('my_account')		 		
+		 		.assert.containsText('#content', 'Welcome')
+		 		.assert.urlContains('my_account')		 		
 		 				 	
 	 },
 	 		 
@@ -39,33 +43,33 @@ module.exports = function(browser)
 			return browser
 				.timeouts("implicit",5000)
 				.waitForElementVisible(element.logoutButton, 1000)
-				.verify.elementPresent(element.logoutButton)				
+				.assert.elementPresent(element.logoutButton)				
 				.click(element.logoutButton)            	            
 	        
 		},
 		
 		 verifyLogout: function() {
 			 return browser
-			 	.verify.visible(element.loginButton)
+			 	.assert.visible(element.loginButton)
 		 },
 		
 		clickViewBalances: function() {
 			return browser
 				.waitForElementVisible(element.viewBalancesLink, 1000)
-				.verify.elementPresent(element.viewBalancesLink)
+				.assert.elementPresent(element.viewBalancesLink)
 				.click(element.viewBalancesLink)
 		},
 		
 		verifyBalances: function() {
 			return browser
 				.waitForElementVisible(element.balancesContent, 1000)
-				.verify.elementPresent(element.balancesContent)
+				.assert.elementPresent(element.balancesContent)
 		},
 		
 		clickContinueTrading: function() {
 			return browser
 				.waitForElementVisible(element.continueTradingButton, 1000)
-				.verify.elementPresent(element.continueTradingButton)
+				.assert.elementPresent(element.continueTradingButton)
 				.click(element.continueTradingButton)
 				.pause(1000)
 		},
@@ -73,7 +77,7 @@ module.exports = function(browser)
 		clickTradeLink: function() {
 			return browser
 				.waitForElementVisible(element.tradeLink, 1000)
-				.verify.elementPresent(element.tradeLink)
+				.assert.elementPresent(element.tradeLink)
 				.click(element.tradeLink)
 				.pause(1000)
 		},
@@ -81,7 +85,7 @@ module.exports = function(browser)
 		clickMyAccountLink: function() {
 			return browser
 				.waitForElementVisible(element.myAccountLink, 1000)
-				.verify.elementPresent(element.myAccountLink)
+				.assert.elementPresent(element.myAccountLink)
 				.click(element.myAccountLink)
 				.pause(1000)
 		},
@@ -89,7 +93,7 @@ module.exports = function(browser)
 		clickMySettings: function() {
 			return browser
 				.waitForElementVisible(element.settingsLink, 1000)
-				.verify.elementPresent(element.settingsLink)
+				.assert.elementPresent(element.settingsLink)
 				.click(element.settingsLink)
 				.pause(1000)
 		},
@@ -97,8 +101,31 @@ module.exports = function(browser)
 		verifyMySettings: function() {
 			return browser
 				.waitForElementVisible(element.userDetails, 1000)
-				.verify.elementPresent(element.userDetails)
+				.assert.elementPresent(element.userDetails)
 				
+		},
+		
+		clickAffiliateLink: function() {
+			return browser
+				.waitForElementVisible(element.affiliateLink, 1000)
+				.assert.elementPresent(element.affiliateLink)
+				.click(element.affiliateLink)
+				.pause(1000)
+		},
+		
+		verifyAffiliatePage: function() {
+			return browser
+				.waitForElementVisible(element.affiliateTab, 1000)
+				.assert.elementPresent(element.affiliateTab)
+				.click(element.affiliateTab)
+				.waitForElementVisible(element.signMeUpButton, 1000)
+				.assert.elementPresent(element.signMeUpButton)
+				.waitForElementVisible(element.faqTab, 1000)
+				.assert.elementPresent(element.faqTab)
+				.click(element.faqTab)
+				.waitForElementVisible(element.faqContent, 1000)
+				.assert.elementPresent(element.faqContent)
+			
 		}
 		
 	};
