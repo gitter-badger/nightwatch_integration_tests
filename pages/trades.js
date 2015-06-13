@@ -26,7 +26,7 @@ module.exports = function(browser)
 		 		.waitForElementVisible(element.startTradingLink, 1000)
 				.assert.elementPresent(element.startTradingLink)
 				.click(element.startTradingLink)
-				.pause(5000)
+				.pause(2000)
 						 	
 	 },
 	 
@@ -38,7 +38,7 @@ module.exports = function(browser)
 		 		.waitForElementVisible(element.forexLink, 1000)
 				.assert.elementPresent(element.forexLink)
 				.click(element.forexLink)
-				.pause(5000)
+				.pause(2000)
 						 	
 	 },
 	 	clickIndicesLink: function() {
@@ -48,7 +48,7 @@ module.exports = function(browser)
 		 		.waitForElementVisible(element.indicesLink, 1000)
 				.assert.elementPresent(element.indicesLink)
 				.click(element.indicesLink)
-				.pause(5000)
+				.pause(2000)
 						 	
 	 },
 	 	clickStocksLink: function() {
@@ -58,7 +58,7 @@ module.exports = function(browser)
 		 		.waitForElementVisible(element.stocksLink, 1000)
 				.assert.elementPresent(element.stocksLink)
 				.click(element.stocksLink)
-				.pause(5000)
+				.pause(2000)
 						 	
 	 },
 	 	clickCommoditiesLink: function() {
@@ -68,7 +68,7 @@ module.exports = function(browser)
 		 		.waitForElementVisible(element.commoditiesLink, 1000)
 				.assert.elementPresent(element.commoditiesLink)
 				.click(element.commoditiesLink)
-				.pause(5000)
+				.pause(2000)
 						 	
 	 },
 	 	clickRandomsLink: function() {
@@ -78,7 +78,7 @@ module.exports = function(browser)
 		 		.waitForElementVisible(element.randomsLink, 1000)
 				.assert.elementPresent(element.randomsLink)
 				.click(element.randomsLink)
-				.pause(5000)
+				.pause(2000)
 				
 						 	
 	 },

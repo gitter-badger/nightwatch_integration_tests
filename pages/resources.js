@@ -26,7 +26,7 @@ return {
 		 		.waitForElementVisible(element.resourcesLink, 1000)
 				.assert.elementPresent(element.resourcesLink)
 				.click(element.resourcesLink)
-				.pause(5000)
+				.pause(2000)
 			 		
 		 },
 		 clickAssetIndexLink: function() {
@@ -35,7 +35,7 @@ return {
 		 		.waitForElementVisible(element.assetIndexLink, 1000)
 				.assert.elementPresent(element.assetIndexLink)
 				.click(element.assetIndexLink)
-				.pause(5000)
+				.pause(2000)
 			 		
 		 },
 		 
@@ -45,7 +45,7 @@ return {
 		 		.waitForElementVisible(element.tradingTimesLink, 1000)
 				.assert.elementPresent(element.tradingTimesLink)
 				.click(element.tradingTimesLink)
-				.pause(5000)
+				.pause(2000)
 		 },
 		 
 		 clickTradingGuideLink: function() {
@@ -54,7 +54,7 @@ return {
 		 		.waitForElementVisible(element.tradingGuideLink, 1000)
 				.assert.elementPresent(element.tradingGuideLink)
 				.click(element.tradingGuideLink)
-				.pause(5000)
+				.pause(2000)
 		 },
 		 clickPricingTableLink: function() {
 			 return browser
@@ -62,7 +62,7 @@ return {
 		 		.waitForElementVisible(element.pricingTableLink, 1000)
 				.assert.elementPresent(element.pricingTableLink)
 				.click(element.pricingTableLink)
-				.pause(5000)
+				.pause(2000)
 		 },
 	 	
 		 clickRiseFallTableLink: function() {
@@ -71,7 +71,7 @@ return {
 		 		.waitForElementVisible(element.riseFallTableLink, 1000)
 				.assert.elementPresent(element.riseFallTableLink)
 				.click(element.riseFallTableLink)
-				.pause(5000)
+				.pause(2000)
 		 },
 		 
 		 verifyResourcesPage: function() {
