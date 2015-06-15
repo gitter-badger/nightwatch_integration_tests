@@ -1,6 +1,6 @@
 //New client's statement shows only a credit of $10,000
 
-var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
+var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
 var viewStatement= require ('./viewStatement').viewStatement;
 
 module.exports = {

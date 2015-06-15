@@ -1,5 +1,5 @@
-var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
-var CONSTS = require('../../utils').CONSTS;
+var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
+var CONSTS = require('../../../utils').CONSTS;
 var username = "bijan@binary.com"
 var password = "test123"
 

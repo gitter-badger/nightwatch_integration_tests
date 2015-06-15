@@ -1,6 +1,6 @@
 //New client can access Statement
 
-var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
+var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
 
 module.exports = {
 		

@@ -1,6 +1,6 @@
 var loginUser = require('./loginUser').loginUser;
 
-require('../../commands/loginUrl')
+require('../../../commands/loginUrl')
 
 module.exports = {
 		

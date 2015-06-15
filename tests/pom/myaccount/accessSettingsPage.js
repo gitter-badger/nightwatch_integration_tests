@@ -1,6 +1,6 @@
-var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
-var loginUser = require('./loginUser').loginUser;
-var logoutUser = require('./logoutUser').logoutUser;
+var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
+//var loginUser = require('../account/loginUser').loginUser;
+//var logoutUser = require('../account/logoutUser').logoutUser;
 
 
 module.exports = {
@@ -19,8 +19,8 @@ module.exports = {
 		'accessSettingsPage' : function (browser) {
 									
 			browser
-		   		.page.account().clickTradeLink()
 		   		.page.account().clickMyAccountLink()
+				.page.account().verifyMyAccount()
 		   		.page.account().clickMySettings()
 		   		.page.account().verifyMySettings()
 		   		.end();

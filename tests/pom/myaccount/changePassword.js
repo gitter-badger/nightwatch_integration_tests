@@ -1,9 +1,9 @@
 //Client can change password
 var utils= require('../../../utils');
-var randomStr= utils.randomStr(5);
-var strPass= 'test' + randomStr(5);
+var randomStr= utils.randomStr(2);
+var strPass= 'test' + randomStr;
 
-var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
+var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
 var viewChangePassword= require ('./viewChangePassword').viewChangePassword;
 
 module.exports = {

@@ -1,6 +1,6 @@
 //Client can access Change Password page
 
-var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
+var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
 
 module.exports = {
 		

@@ -1,4 +1,4 @@
-var loginUser = require('./loginUser').loginUser;
+var loginUser = require('../account/loginUser').loginUser;
 
 module.exports = {
 		

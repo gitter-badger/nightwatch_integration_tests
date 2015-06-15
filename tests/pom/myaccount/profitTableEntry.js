@@ -1,6 +1,6 @@
 //New client's Profit Table has no entries
 
-var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
+var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
 var viewProfitTable= require('./viewProfitTable').viewProfitTable;
 
 module.exports = {
