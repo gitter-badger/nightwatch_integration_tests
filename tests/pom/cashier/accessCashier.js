@@ -1,3 +1,5 @@
+//Client can access Cashier Page
+
 var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
 
 module.exports= {

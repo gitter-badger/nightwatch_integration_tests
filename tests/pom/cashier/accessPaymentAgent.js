@@ -1,3 +1,5 @@
+//Client can view Payment Agent page from Cashier page
+
 var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
 var accessCashier= require('./accessCashier').accessCashier;
 

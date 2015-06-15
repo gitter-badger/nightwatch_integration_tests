@@ -1,3 +1,5 @@
+//Client can view available payment methods from Cashier page
+
 var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
 var accessCashier= require('./accessCashier').accessCashier;
 
