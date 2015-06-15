@@ -1,4 +1,4 @@
-var utils = require('../../utils');
+var utils = require('../../../utils');
 var randomStr = utils.randomStr(5),
 randomEmail = 'binarytest-' + randomStr + '@mailinator.com';
 //randomEmail = 'bijan@binary.com'

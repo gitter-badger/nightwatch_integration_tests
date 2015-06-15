@@ -21,8 +21,7 @@ module.exports = function(browser)
         affiliateLink: '#topMenuBecomeAffiliate',
         authenticateLink: '#topMenuAuthenticateAccount',
         tradeLink: '#menu-top > li:nth-child(4) > a',
-        userDetails: '#user_details'
-       
+        userDetails: '#user_details'       
     };
 				
 	return {

@@ -1,6 +1,6 @@
 //New client has $10,000 in virtual currency
 
-var createVirtualAccount= require('./createVirtualAccount').createVirtualAccount;
+var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
 var viewPortfolio= require('./viewPortfolio').viewPortfolio;
 
 module.exports = {
