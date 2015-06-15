@@ -36,7 +36,7 @@ module.exports = function(browser)
 	 		 
 		clickLogout: function() {
 			return browser
-				.timeouts("implicit",5000)
+				.pause(2000)
 				.waitForElementVisible(element.logoutButton, 1000)
 				.verify.elementPresent(element.logoutButton)				
 				.click(element.logoutButton)            	            

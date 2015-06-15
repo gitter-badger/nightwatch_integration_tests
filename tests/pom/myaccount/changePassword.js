@@ -1,17 +1,14 @@
 //Client can change password
 var utils= require('../../../utils');
 var randomStr= utils.randomStr(2);
+var strEmail= 'binarytest-' + randomStr + '@mailinator.com';
 var strPass= 'test' + randomStr;
-
-var createVirtualAccount= require('../account/createVirtualAccount').createVirtualAccount;
-var viewChangePassword= require ('./viewChangePassword').viewChangePassword;
+var strPassNew= 'test' + randomStr + 'new';
 
 module.exports = {
 		
 	before: function(browser) {
 		console.log('Setting up...');
-		createVirtualAccount(browser, true);
-		viewChangePassword(browser, true);
 	},
 			
 			
@@ -23,10 +20,27 @@ module.exports = {
 	'changePassword': function (browser) {
 									
 		browser
-	   		.page.changePassword().changePassword(strPass)
+	   		.page.home().goToHome()
+			.page.home().setAccEmail(strEmail)
+			.page.home().setAccPassword(strPass)
+			.page.home().clickOpenAccount()
+			.page.account().verifyMyAccount()
+			
+			.page.account().clickPassword()
+			.page.account().verifyPassword()
+			.page.changePassword().changePassword(strPass, strPassNew)
 			.page.changePassword().verifyChangePassword()
 			
-			.end();
+			.page.account().clickLogout()
+			.page.account().verifyLogout()
+
+			.page.home().goToHome()
+			.page.login().setLoginEmail(strEmail)
+			.page.login().setLoginPassword(strPassNew)
+			.page.login().clickLogin()
+			.page.account().verifyMyAccount()
+			
+			
 		   
 	}
 		
