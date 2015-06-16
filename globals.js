@@ -8,6 +8,11 @@ function randomStr(length, initChars) {
 }
 
 module.exports = {
+	TEST_CREDENTIALS:{
+		USERNAME:,
+		PASSWORD:,
+		
+	}
     'default': {
         url: 'https://www.binary-beta.com',
         randomStr: randomStr
