@@ -16,11 +16,7 @@ module.exports = {
 	'createVirtualAccount' : function (browser, doNotEnd) {
 		
 		var randomStr = utils.randomStr(5),
-<<<<<<< HEAD
 		email = 'binarytest-' + randomStr + '@mailinator.com',
-=======
-		email = 'binarytest-' + randomStr + '@mailinator.com';
->>>>>>> bijan/page_object_model
 		password = 'test123';
 		   
 	   	   browser

@@ -209,6 +209,7 @@ module.exports = function(browser)
 				.verify.containsText('body', 'Deposit')
 				.verify.containsText('body', 'virtual money credit to account')
 				.verify.containsText('body', '10,000.00')
+				.assert.cssClassPresent('body', 'grd-parent.grd-grid-12.table-body.table-body-lines.grd-row-padding')
 		},
 
 	
