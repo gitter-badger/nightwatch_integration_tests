@@ -16,11 +16,7 @@ module.exports = {
 	'createVirtualAccount' : function (browser, doNotEnd) {
 		
 		var randomStr = utils.randomStr(5),
-<<<<<<< HEAD:tests/pom/account/createVirtualAccount.js
-		email = 'binarytest-' + randomStr + '@mailinator.com';
-=======
-		randomEmail = 'binarytest-' + randomStr + '@mailinator.com';
->>>>>>> bijan/page_object_model:tests/pom/account/createVirtualAccount.js
+		email = 'binarytest-' + randomStr + '@mailinator.com',
 		password = 'test123';
 		   
 	   	   browser
