@@ -15,6 +15,7 @@
 			 return browser
 			 		.url(browser.launch_url)
 			 		.waitForElementVisible('body', 1000)
+			 		.pause(5000)
 			 		
 		 },
 		 
@@ -27,11 +28,13 @@
 		 
 		 setAccPassword: function(strPassword) {
 			 return browser
-			 		.waitForElementVisible(element.passwordInput1, 1000)
+			 		.waitForElementVisible(element.passwordInput1, 2000)
+			 		.waitForElementPresent(element.passwordInput1, 2000)
 			 		.assert.visible(element.passwordInput1)
 			 		.setValue(element.passwordInput1, strPassword)
-			 		.pause(3000)
-			 		.waitForElementVisible(element.passwordInput2, 3000)
+			 		.pause(4000)
+			 		.waitForElementVisible(element.passwordInput2, 2000)
+			 		.waitForElementPresent(element.passwordInput2, 2000)
 			 		.assert.visible(element.passwordInput2)
 			 		.setValue(element.passwordInput2, strPassword)
 		 },

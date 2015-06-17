@@ -9,9 +9,9 @@ exports.command = function(username, password, callback) {
     };
     this
         .frame(null)
-        .waitForElementPresent(element.loginIdInput, 10000)
+        .waitForElementPresent(element.loginIdInput, 5000)
         .setValue(element.loginIdInput, username)
-        .waitForElementPresent(element.passwordInput, 10000)
+        .waitForElementPresent(element.passwordInput, 5000)
         .setValue(element.passwordInput, password)
         .click(element.loginButton);
 
