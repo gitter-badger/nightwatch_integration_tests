@@ -4,6 +4,8 @@
 
 ## Nightwatch and Selenium test suite for Binary.com
 
+[![Join the chat at https://gitter.im/regentmarkets/nightwatch_integration_tests](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/regentmarkets/nightwatch_integration_tests?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 We use automated integration tests to protect against stability regression.
 
 [Nightwatch](http://nightwatchjs.org/) can run tests against a local [Selenium](http://www.seleniumhq.org/) server or against [BrowserStack](http://www.browserstack.com/start)
