@@ -1,8 +1,5 @@
 var utils = require('../../../utils');
-var randomStr = utils.randomStr(5),
-randomEmail = 'binarytest-' + randomStr + '@mailinator.com';
-//randomEmail = 'bijan@binary.com'
-password = 'test123';
+
 
 module.exports = {
 		
@@ -17,16 +14,20 @@ module.exports = {
 	
 		 		 
 	'createVirtualAccount' : function (browser, doNotEnd) {
+		
+		var randomStr = utils.randomStr(5),
+		email = 'binarytest-' + randomStr + '@mailinator.com';
+		password = 'test123';
 		   
 	   	   browser
 	   		.page.home().goToHome()
-	   		.page.home().setAccEmail(randomEmail)
-	   		.page.home().setAccPassword(password)
-	   		.page.home().clickOpenAccount()
+	   		.createVirtualAccount(email,password)
 	   		.page.account().verifyMyAccount()
-	   		//.end();
-	   	   
+	   		
 	   		if (!doNotEnd) browser.end();
+	   		
+	   	   
+	   		
   }
 
 
