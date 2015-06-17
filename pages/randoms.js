@@ -20,15 +20,15 @@ var element = {
     amountTypeSelect: '#amount_type',
     currencyType: 'bet_currency',
     startTime: 'atleast',
-    updownLink: '#bets_tab_callput > a',
-    touchnotouchLink: '#bets_tab_touchnotouch > a',
-    inoutLink: '#bets_tab_inout > a',
-    asiansLink: '#bets_tab_asian > a',
-    digitsLink: '#bets_tab_digits > a',
-    riseFallLink: '#risefall > a',
-    higherLowerLink: '#higherlower > a',
-    endsOutsideLink: '#endsinout > a',
-    staysOutsideLink: '#staysinout > a',
+    upDownLink: '#bets_tab_callput',
+    touchNoTouchLink: '#bets_tab_touchnotouch',
+    inOutLink: '#bets_tab_inout',
+    asiansLink: '#bets_tab_asian',
+    digitsLink: '#bets_tab_digits',
+    riseFallLink: '#risefall',
+    higherLowerLink: '#higherlower',
+    endsBetweenOutsideLink: '#endsinout',
+    staysBetweenOutsideLink: '#staysinout',
     purchaseTouchesLink: '#btn_buybet_130',
     purchaseDoesntTouchLink: '#btn_buybet_140',
     purchaseEndsBetweenLink: '#btn_buybet_170',
@@ -42,15 +42,172 @@ var element = {
 
 return {
 	
-	 goToRandoms: function() {
-		 return browser
-		 		.url(browser.launch_url + URL.TRADE.RANDOM)
-		 		.waitForElementVisible('body', 5000)
-		 		
-	 },
-	 
-	 
-	 
+	clickUpDownLink: function() {
+		
+	 	return browser
+	 		.timeouts("implicit",2000)
+	 		.waitForElementVisible(element.upDownLink, 1000)
+			.assert.elementPresent(element.upDownLink)
+			.click(element.upDownLink)
+			.pause(2000)
+					 	
+	},
+	
+	clickRiseFallLink: function() {
+		
+	 	return browser
+	 		.timeouts("implicit",2000)
+	 		.waitForElementVisible(element.riseFallLink, 1000)
+			.assert.elementPresent(element.riseFallLink)
+			.click(element.riseFallLink)
+			.pause(2000)
+					 	
+	},
+	
+	clickHigherLowerLink: function() {
+		
+	 	return browser
+	 		.timeouts("implicit",2000)
+	 		.waitForElementVisible(element.higherLowerLink, 1000)
+			.assert.elementPresent(element.higherLowerLink)
+			.click(element.higherLowerLink)
+			.pause(2000)
+					 	
+	},
+	
+	
+	clickTouchNoTouchLink: function() {
+		
+	 	return browser
+	 		.timeouts("implicit",2000)
+	 		.waitForElementVisible(element.touchNoTouchLink, 1000)
+			.assert.elementPresent(element.touchNoTouchLink)
+			.click(element.touchNoTouchLink)
+			.pause(2000)
+					 	
+	},
+	
+	clickInOutLink: function() {
+		
+	 	return browser
+	 		.timeouts("implicit",2000)
+	 		.waitForElementVisible(element.inOutLink, 1000)
+			.assert.elementPresent(element.inOutLink)
+			.click(element.inOutLink)
+			.pause(2000)
+					 	
+	},
+	
+	clickEndsBetweenOutsideLink: function() {
+		
+	 	return browser
+	 		.timeouts("implicit",2000)
+	 		.waitForElementVisible(element.endsBetweenOutsideLink, 1000)
+			.assert.elementPresent(element.endsBetweenOutsideLink)
+			.click(element.endsBetweenOutsideLink)
+			.pause(2000)
+					 	
+	},
+	
+	clickStaysBetweenOutsideLink: function() {
+		
+	 	return browser
+	 		.timeouts("implicit",2000)
+	 		.waitForElementVisible(element.staysBetweenOutsideLink, 1000)
+			.assert.elementPresent(element.staysBetweenOutsideLink)
+			.click(element.staysBetweenOutsideLink)
+			.pause(2000)
+					 	
+	},
+	
+	
+ 
+	clickAsiansLink: function() {
+		
+	 	return browser
+	 		.timeouts("implicit",2000)
+	 		.waitForElementVisible(element.asiansLink, 1000)
+			.assert.elementPresent(element.asiansLink)
+			.click(element.asiansLink)
+			.pause(2000)
+					 	
+	},
+	
+	clickDigitsLink: function() {
+		
+	 	return browser
+	 		.timeouts("implicit",2000)
+	 		.waitForElementVisible(element.digitsLink, 1000)
+			.assert.elementPresent(element.digitsLink)
+			.click(element.digitsLink)
+			.pause(2000)
+					 	
+	},
+	
+	
+	
+	verifyRiseFallPage: function() {
+		
+	 	return browser
+	 		.assert.urlContains('form_name=risefall')
+	 		.waitForElementVisible(element.getPricesButton, 1000)
+			.assert.elementPresent(element.getPricesButton)
+								 	
+	},
+	
+	verifyHigherLowerPage: function() {
+		
+	 	return browser
+	 		.assert.urlContains('form_name=higherlower')
+	 		.waitForElementVisible(element.getPricesButton, 1000)
+			.assert.elementPresent(element.getPricesButton)
+								 	
+	},
+	
+		
+	verifyTouchNoTouchPage: function() {
+		
+	 	return browser
+		 	.assert.urlContains('form_name=touchnotouch')
+	 		.waitForElementVisible(element.getPricesButton, 1000)
+			.assert.elementPresent(element.getPricesButton)
+					 	
+	},
+	
+	verifyEndBetweenOutsidePage: function() {
+		
+	 	return browser
+		 	.assert.urlContains('form_name=endsinout')
+	 		.waitForElementVisible(element.getPricesButton, 1000)
+			.assert.elementPresent(element.getPricesButton)
+	},
+	
+	verifyStaysBetweenOutsidePage: function() {
+		
+	 	return browser
+		 	.assert.urlContains('form_name=staysinout')
+	 		.waitForElementVisible(element.getPricesButton, 1000)
+			.assert.elementPresent(element.getPricesButton)
+	},
+ 
+	verifyAsiansPage: function() {
+		
+	 	return browser
+		 	.assert.urlContains('form_name=asian')
+	 		.waitForElementVisible(element.getPricesButton, 1000)
+			.assert.elementPresent(element.getPricesButton)
+					 	
+	},
+	
+	verifyDigitsPage: function() {
+		
+	 	return browser
+		 	.assert.urlContains('form_name=digits')
+	 		.waitForElementVisible(element.getPricesButton, 1000)
+			.assert.elementPresent(element.getPricesButton)
+						 	
+	}
+	
 };
 
 }

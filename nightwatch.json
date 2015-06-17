@@ -20,7 +20,7 @@
 
   "test_settings" : {
     "default" : {
-      "launch_url" : "https://qa:pXJF!h@x3dEv@www.binaryqa05.com",
+      "launch_url" : "https://qa:pXJF!h@x3dEv@www.binaryqa11.com",
       "selenium_port"  : 4444,
       "selenium_host"  : "localhost",
       "silent": true,
