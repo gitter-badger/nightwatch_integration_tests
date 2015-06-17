@@ -21,16 +21,12 @@ module.exports = function(browser)
         affiliateLink: '#topMenuBecomeAffiliate',
         authenticateLink: '#topMenuAuthenticateAccount',
         tradeLink: '#menu-top > li:nth-child(4) > a',
-<<<<<<< HEAD
-        userDetails: '#user_details'       
-=======
         userDetails: '#user_details',
         affiliateTab: '#general_info',
         faqTab: '#faq',
         signMeUpButton: '#general_info-content > div > div:nth-child(3) > a > span',
         faqContent: '#faq-content > div'
        
->>>>>>> bijan/page_object_model
     };
 				
 	return {
@@ -109,7 +105,6 @@ module.exports = function(browser)
 				
 		},
 		
-<<<<<<< HEAD
 		clickPortfolio: function() {
 			return browser
 				.waitForElementVisible(element.portfolioLink, 1000)
@@ -169,7 +164,7 @@ module.exports = function(browser)
 				.verify.containsText('#content', 'There are no items during this period')
 				.pause(1000)
 		},
-=======
+		
 		clickAffiliateLink: function() {
 			return browser
 				.waitForElementVisible(element.affiliateLink, 1000)
@@ -191,8 +186,7 @@ module.exports = function(browser)
 				.waitForElementVisible(element.faqContent, 1000)
 				.assert.elementPresent(element.faqContent)
 			
-		}
->>>>>>> bijan/page_object_model
+		},
 		
 		clickPassword: function() {
 			return browser
